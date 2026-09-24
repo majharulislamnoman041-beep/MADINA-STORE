@@ -14,35 +14,41 @@
 <body class="min-h-screen flex flex-col">
 
     <!-- Header -->
-    <header>
-        <h1 class="bg-amber-200 text-3xl text-center font-bold">
-            AL MADINA STORE
-        </h1>
-    </header>
+<header class="flex items-center justify-between bg-amber-200 px-4 py-3 p-4">
 
+    <!-- Store Name -->
+    <h1 class="text-3xl font-bold">
+        AL MADINA STORE
+    </h1>
 
     <!-- Navigation -->
-    <nav>
-        <ul class="bg-black flex flex-wrap justify-center gap-2 md:justify-end md:gap-4 md:pr-8">
+    <nav class="ml-auto mr-8 p-5 ">
+        <ul class="flex gap-2">
 
-            <li>
+            <li class="font-medium text-black border-2 py-3 px-4 rounded-lg hover:bg-amber-400 transition">
                 <a href="home.html">🏠 Home</a>
             </li>
 
-            <li>
+            <li class="font-medium text-black border-2 py-3 px-4 rounded-lg hover:bg-amber-400 transition">
                 <a href="Products.html">📦 Products</a>
             </li>
 
-            <li>
+            <li class="font-medium text-black border-2 py-3 px-4 rounded-lg hover:bg-amber-400 transition">
                 <a href="Categories.html">☷ Categories</a>
             </li>
 
-            <li>
+            <li class="font-medium text-black border-2 py-3 px-4 rounded-lg hover:bg-amber-400 transition">
                 <a href="Contact.html">☎ Contact</a>
             </li>
 
         </ul>
     </nav>
+
+</header>
+
+
+    <!-- Navigation -->
+    
 
 
     <!-- Main Content -->
@@ -56,33 +62,42 @@
 
 
             <!-- Categories -->
-            <div>
+            <div class=" bg-amber-200 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 p-6 justify-items-center ">
 
                 <!-- Category 1 -->
-                <div>
-                    <h3>Men's Fashion</h3>
-                    <p>T-Shirts, Shirts, Pants and more.</p>
+                <div class="border-2 p-5 rounded-lg w-64 shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition">
+                    <h3 class="text-xl font-bold">Men's Fashion</h3>
+                    <p class="text-gray-600 my-2">T-Shirts, Shirts, Pants and more.</p>
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black">
+                        View Products
+                    </button>
                 </div>
-
 
                 <!-- Category 2 -->
-                <div>
-                    <h3>Women's Fashion</h3>
-                    <p>Dresses, Tops, Hijab and more.</p>
+                <div class="border-2 p-5 rounded-lg w-64 shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition">
+                    <h3 class="text-xl font-bold">Women's Fashion</h3>
+                    <p class="text-gray-600 my-2">Dresses, Tops, Hijab and more.</p>
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black">
+                        View Products
+                    </button>
                 </div>
-
 
                 <!-- Category 3 -->
-                <div>
-                    <h3>Electronics</h3>
-                    <p>Mobile, Headphones, Watches and more.</p>
+                <div class="border-2 p-5 rounded-lg w-64 shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition">
+                    <h3 class="text-xl font-bold">Electronics</h3>
+                    <p class="text-gray-600 my-2">Mobile, Headphones, Watches and more.</p>
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black">
+                        View Products
+                    </button>
                 </div>
 
-
                 <!-- Category 4 -->
-                <div>
-                    <h3>Accessories</h3>
-                    <p>Bags, Wallets, Sunglasses and more.</p>
+                <div class="border-2 p-5 rounded-lg w-64 shadow-md text-center hover:shadow-xl hover:-translate-y-2 transition">
+                    <h3 class="text-xl font-bold">Accessories</h3>
+                    <p class="text-gray-600 my-2">Bags, Wallets, Sunglasses and more.</p>
+                    <button class="bg-black text-white px-4 py-2 rounded hover:bg-white hover:text-black">
+                        View Products
+                    </button>
                 </div>
 
             </div>
@@ -95,9 +110,7 @@
     <!-- Footer -->
     <footer class="w-full">
 
-        <svg class="block w-full"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320">
+        <svg class="block w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 
             <path fill="#ffd700" fill-opacity="1"
                 d="M0,256L60,234.7C120,213,240,171,360,149.3C480,128,600,128,720,138.7C840,149,960,171,1080,197.3C1200,224,1320,256,1380,272L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
