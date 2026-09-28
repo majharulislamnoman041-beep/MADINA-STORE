@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - AL MADINA STORE</title>
+
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="bg-amber-200 flex flex-col md:flex-row md:justify-between items-center">
+
+        <!-- Header -->
+        <header class="bg-amber-200 text-center py-4">
+
+            <h1 class="text-3xl font-bold">
+                AL MADINA STORE
+            </h1>
+
+        </header>
+
+        <ul class="flex flex-wrap justify-center gap-2 p-2">
+
+
+
+            <li>
+                <a href="index.html" class="block text-black border-2 border-white px-4 py-2 rounded
+                      hover:bg-amber-400 hover:scale-105 transition duration-200">
+                    🏠 home
+                </a>
+            </li>
+            <li>
+                <a href="Products.html" class="block text-black border-2 border-white px-4 py-2 rounded
+                      hover:bg-amber-400 hover:scale-105 transition duration-200">
+                    📦 Products
+                </a>
+            </li>
+
+            <li>
+                <a href="Categories.html" class="block text-black border-2 border-white px-4 py-2 rounded
+                      hover:bg-amber-400 hover:scale-105 transition duration-200">
+                    ☷ Categories
+                </a>
+            </li>
+
+            <li>
+                <a href="/Contact.html" class="block text-black border-2 border-white px-4 py-2 rounded
+                      hover:bg-amber-400 hover:scale-105 transition duration-200">
+                    ☎ Contact
+                </a>
+            </li>
+            <li>
+                <a href="help.html" class="block text-black border-2 border-white px-4 py-2 rounded
+                      hover:bg-amber-400 hover:scale-105 transition duration-200">
+                    Help
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <!-- Main Products -->
+    <h1 class="text-3xl font-bold text-center p-5">
+        Payment
+    </h1>
+    <div class=" w-full max-w-md mx-auto p-6 border-2 rounded-lg">
+
+        <h2 class="text-2xl font-bold text-center mb-5">
+            Customer Information
+        </h2>
+
+        <label class="block mb-2">Customer Name</label>
+        <input type="text" placeholder="Enter your name" class="w-full border p-2 rounded mb-4
+                  focus:outline-none focus:ring-2 focus:ring-amber-400">
+
+        <label class="block mb-2">Phone Number</label>
+        <input type="text" placeholder="Enter phone number" class="w-full border p-2 rounded mb-4
+                  focus:outline-none focus:ring-2 focus:ring-amber-400">
+
+        <label class="block mb-2">Address</label>
+        <textarea placeholder="Enter your address" class="w-full border p-2 rounded mb-4
+               focus:outline-none focus:ring-2 focus:ring-amber-400"></textarea>
+
+
+        <!-- Payment Method -->
+        <label class="block mb-2">Payment Method</label>
+
+        <select class="w-full border p-2 rounded mb-4
+                   hover:border-amber-400
+                   focus:outline-none focus:ring-2 focus:ring-amber-400">
+
+            <option>Select Payment Method</option>
+            <option>Cash on Delivery</option>
+            <option>Mobile Banking</option>
+            <option>Bank Transfer</option>
+
+        </select>
+
+
+        <button class="w-full bg-black text-white p-3 rounded
+               hover:bg-amber-400 hover:text-black
+               hover:scale-105 transition">
+
+            Place Order
+
+        </button>
+
+    </div>
+
+    <!-- Order Summary -->
+    <div class=" w-full max-w-md mx-auto mt-6 p-6 border-2 rounded-lg">
+
+        <h2 class="text-2xl font-bold text-center mb-5">
+            Order Summary
+        </h2>
+
+        <div class="flex justify-between mb-3 p-2 rounded
+                hover:bg-amber-300 hover:text-black transition">
+            <span>Product</span>
+            <span>T-Shirt</span>
+        </div>
+
+        <div class="flex justify-between mb-3 p-2 rounded
+                hover:bg-amber-300 hover:text-black transition">
+            <span>Price</span>
+            <span>৳500</span>
+        </div>
+
+        <div class="flex justify-between mb-3 p-2 rounded
+                hover:bg-amber-300 hover:text-black transition">
+            <span>Quantity</span>
+            <span>1</span>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="flex justify-between font-bold text-lg border-t pt-4 ">
+
+            <span>Total</span>
+
+            <span class="text-black">
+                ৳500
+            </span>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-6">
+
+        <h2 class="text-xl font-bold">
+            AL MADINA STORE
+        </h2>
+
+        <p class="mt-2 text-sm">
+            Quality Products | Best Prices | Trusted Service
+        </p>
+
+        <div class="mt-4 flex justify-center gap-4">
+
+            <a href="#" class="hover:text-amber-400 transition">
+                Facebook
+            </a>
+
+            <a href="#" class="hover:text-amber-400 transition">
+                Instagram
+            </a>
+
+            <a href="#" class="hover:text-amber-400 transition">
+                YouTube
+            </a>
+           
+        </div>
+         <p class="mt-4">
+                📞 01700-000000 | ✉️ info@almadinastore.com
+            </p>
+    </footer>
+</body>
+
+</html>
