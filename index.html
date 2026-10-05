@@ -4,77 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind Project 2</title>
+
+    <title>AL MADINA STORE</title>
 
     <link rel="stylesheet" href="./src/output.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<!-- 1. body-te min-h-screen add kora hoyeche -->
 
 <body class="min-h-screen flex flex-col">
-  <h1 class="bg-amber-200 text-3xl text-center font-bold">AL MADINA STORE</h1>
-    <nav class="flex flex-wrap justify-between p-2">
-      
-  <input type="text" placeholder="🔍 Search products..."
-                class="w-full sm:w-80 px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-amber-400">
 
-                
-      <ul class=" flex flex-wrap items-center justify-end gap-2 p-2md:pr-8">
-          
 
-            <li class="font-medium text-black-50 m-px p-px hover:bg-amber-400 border-2 py-2 px-2 rounded">
+    <!-- Store Name -->
+    <h1 class="bg-amber-200 text-2xl sm:text-3xl text-center font-bold py-3">
+        AL MADINA STORE
+    </h1>
+
+
+    <!-- Navigation -->
+    <nav class="p-3">
+
+
+        <!-- Search + Menu Button -->
+        <div class="flex items-center justify-between gap-3">
+
+            <!-- Search -->
+            <input
+                type="text"
+                placeholder="🔍 Search products..."
+                class="w-full md:w-80 px-4 py-2 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-amber-400"
+            >
+
+
+            <!-- Menu Button -->
+            <button
+                onclick="toggleMenu()"
+                class="md:hidden text-2xl border-2 px-3 py-2 rounded hover:bg-amber-400"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+
+        <!-- Menu -->
+        <ul
+            id="menu"
+            class="hidden md:flex flex-col md:flex-row justify-center items-center gap-2 mt-3 md:mt-0"
+        >
+
+            <li
+                class="w-full md:w-auto text-center font-medium text-black hover:bg-amber-400 border-2 py-2 px-3 rounded transition"
+            >
+                <a href="index.html">🏠 Home</a>
+            </li>
+
+
+            <li
+                class="w-full md:w-auto text-center font-medium text-black hover:bg-amber-400 border-2 py-2 px-3 rounded transition"
+            >
                 <a href="Products.html">📦 Products</a>
             </li>
 
-            <li class="font-medium text-black-50 m-px p-px hover:bg-amber-400 border-2 py-2 px-2 rounded">
+
+            <li
+                class="w-full md:w-auto text-center font-medium text-black hover:bg-amber-400 border-2 py-2 px-3 rounded transition"
+            >
                 <a href="Categories.html">☷ Categories</a>
             </li>
 
-            <li class="font-medium text-black-50 m-px p-px hover:bg-amber-400 border-2 py-2 px-2 rounded">
+
+            <li
+                class="w-full md:w-auto text-center font-medium text-black hover:bg-amber-400 border-2 py-2 px-3 rounded transition"
+            >
                 <a href="Contact.html">☎ Contact</a>
             </li>
-            <li class="font-medium text-black-50 m-px p-px hover:bg-amber-400 border-2 py-2 px-2 rounded">
-                <a href="help.html">Help </a>
+
+
+            <li
+                class="w-full md:w-auto text-center font-medium text-black hover:bg-amber-400 border-2 py-2 px-3 rounded transition"
+            >
+                <a href="help.html">Help</a>
             </li>
 
         </ul>
+
     </nav>
 
-    <!-- 2. h-96 kete deya hoyeche ebong flex-1 rakha hoyeche -->
-    <section class="flex-1 flex flex-col justify-center items-center text-center">
 
-        <h2 class="text-3xl font-bold ">Welcome to AL MADINA STORE</h2>
+    <!-- Hero Section -->
+    <section
+        class="flex-1 flex flex-col justify-center items-center text-center px-4 py-12"
+    >
 
-        <p class="text-gray-600 text-lg my-2">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+            Welcome to AL MADINA STORE
+        </h2>
+
+
+        <p class="text-gray-600 text-base sm:text-lg my-3">
             Discover quality products at the best prices.
         </p>
 
-        <button class="bg-black text-white px-5 py-2 rounded hover:bg-white hover:text-black border-2">Shop Now</button>
+
+        <a
+            href="Products.html"
+            class="bg-black text-white px-5 py-2 rounded border-2 border-black hover:bg-white hover:text-black transition"
+        >
+            Shop Now
+        </a>
 
     </section>
 
-    <!-- 3. Footer continuous niche thakbe -->
-
-
 
     <!-- Footer -->
-    <footer class="bg-black text-white text-center py-5">
+    <footer class="bg-black text-white text-center py-5 px-3">
 
         <h2 class="text-xl font-bold text-amber-400">
             AL MADINA STORE
         </h2>
+
 
         <p class="text-sm text-gray-400 mt-1">
             Quality Products • Best Prices • Trusted Service
         </p>
 
 
-
-        <p class="text-xs text-gray-500">
+        <p class="text-xs text-gray-500 mt-2">
             © 2026 AL MADINA STORE • All Rights Reserved
         </p>
 
     </footer>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function toggleMenu() {
+
+            document
+                .getElementById("menu")
+                .classList
+                .toggle("hidden");
+
+        }
+
+    </script>
+
+
 </body>
 
 </html>
